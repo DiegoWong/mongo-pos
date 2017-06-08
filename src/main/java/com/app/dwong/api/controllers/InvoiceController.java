@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * Created by dwong on 2/28/17.
  */
-
 @RepositoryRestController
 public class InvoiceController {
 

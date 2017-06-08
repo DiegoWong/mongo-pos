@@ -1,1 +1,25 @@
 initial.data: true
+spring.data.mongodb.host: localhost
+spring.data.mongodb.port: 27017
+#spring.data.mongodb.username: japo2300@gmail.com
+#spring.data.mongodb.password: M3t4ll1c4!
+#spring.data.mongodb.database: mongo-pos
+
+
+server:
+    port: 8082
+
+security:
+  oauth2:
+    client:
+      access-token-uri: http://localhost:8081/uaa/oauth/token
+      user-authorization-uri: http://localhost:8081/uaa/oauth/authorize
+      client-id: acme
+      client-secret: acmesecret
+      scope: write
+    resource:
+      token-info-uri: http://localhost:8081/uaa/oauth/check_token
+      user-info-uri: http://localhost:8081/uaa/user
+  user:
+      name: 'vale'
+      password: 'pass'
